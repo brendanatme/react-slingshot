@@ -12,6 +12,6 @@ Current steps to get up and running:
 1. run `npm run remove-demo`
 1. run `npm run start`
 1. now the dev env will break. You'll need to edit some files:
-1. add a working `/routes.js` file (that returns a <Route /> component)
+1. add a working `/routes.js` file (that returns a &lt;Route /&gt; component)
 1. edit `/index.js` to use a `styles.css` instead of `styles.scss`
 1. Das it dawg
