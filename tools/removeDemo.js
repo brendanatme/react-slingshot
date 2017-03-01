@@ -14,9 +14,8 @@ const pathsToRemove = [
   './src/images',
   './src/reducers/*',
   './src/store/store.spec.js',
-  './src/styles',
+  './src/styles/styles.scss',
   './src/routes.js',
-  './src/index.js',
   './tools/removeDemo.js'
 ];
 
@@ -26,12 +25,12 @@ const filesToCreate = [
     content: '// Must have at least one test file in this directory or Mocha will throw an error.'
   },
   {
-    path: './src/index.js',
-    content: '// Set up your application entry point here...'
+    path: './src/reducers/index.js',
+    content: '// Set up your root reducer here...\n import { combineReducers } from \'redux\';\n import {routerReducer} from \'react-router-redux\'; \n const rootReducer = combineReducers({ routing: routerReducer }); \n export default rootReducer;'
   },
   {
-    path: './src/reducers/index.js',
-    content: '// Set up your root reducer here...\n import { combineReducers } from \'redux\';\n export default combineReducers;'
+    path: './src/styles/styles.css',
+    content: '/* postcss with css modules styles here... */ \n'
   }
 ];
 
